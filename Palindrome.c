@@ -1,22 +1,22 @@
 #include<stdio.h>
 int main()
 {
-    int i,n,temp,rev=0,d;
+    int i,n,d,rev=0,temp;
     scanf("%d",&n);
     temp=n;
     while(n)
     {
-        d=n%10;
-        rev=rev*10+d;
-        n=n/10;
+      d=n%10;
+      rev=rev*10+d;
+      n=n/10;
     }
-    if(rev==temp)
+    if(temp==rev)
     {
-        printf("True");
+    printf("True");
     }
     else
     {
-        printf("False");
+    printf("False");
     }
     return 0;
 }
