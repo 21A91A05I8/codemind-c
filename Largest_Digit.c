@@ -1,18 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,max=0,d;
+    int n,d,large=0;
     scanf("%d",&n);
     while(n)
     {
-       d=n%10;
-       if(d>=max)
-       {
-           max=d;
-       }
-       n=n/10;
+        d=n%10;
+        n=n/10;
+        
+    
+    if(d>large)
+    {
+        large=d;
     }
-    printf("%d",max);
-    
-    
+    }
+    printf("%d",large);
 }
