@@ -1,23 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int i,n,c=0;
+    int i,n;
     scanf("%d",&n);
-    for(i=1;i<n;i++)
+    for(i=0;i<=n;i++)
     {
-        if(n==i*i)
-        {
-          c++;
-        }
-        
+       if(n==i*i) 
+       {
+           printf("True");
+           return 0;
+       }
     }
-    if(c==1)
-    {
-        printf("True");
-    }
-    else
-    {
-        printf("False");
-    }
-    return 0;
+       
+           printf("False");
+           return 0;
+       
+    
 }
