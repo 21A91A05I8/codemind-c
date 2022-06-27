@@ -1,12 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c=0,dc=0,i,j;
+    int a,b,c=0,j,i;
     scanf("%d%d",&a,&b);
     for(i=a;i<=b;i++)
     {
         c=0;
-        for(j=1;j<=i;j++)
+        for(j=1;j<=b;j++)
         {
             if(i%j==0)
             {
@@ -15,10 +15,8 @@ int main()
         }
         if(c==2)
         {
-           printf("%d
-",i) ;
+            printf("%d
+",i);
         }
-       
-        
     }
 }
