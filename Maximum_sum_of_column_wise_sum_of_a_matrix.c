@@ -1,27 +1,28 @@
 #include<stdio.h>
 int main()
 {
-    int r,c,i,j,arr[100][100],sum=0,max=0;
-    scanf("%d%d",&r,&c);
-    for(i=0;i<r;i++)
+    int a,b,i,j,arr[100][100],s=0,max=0;
+    scanf("%d%d",&a,&b);
+    for(i=0;i<a;i++)
     {
-        for(j=0;j<c;j++)
+        for(j=0;j<b;j++)
         {
             scanf("%d",&arr[i][j]);
         }
     }
-    for(j=0;j<c;j++)
+    for(j=0;j<b;j++)
     {
-        sum=0;
-        for(i=0;i<r;i++)
+        s=0;
+        for(i=0;i<a;i++)
         {
-          sum=sum+arr[i][j]  ;
-          if(sum>=max)
+            s=s+arr[i][j];
+        }
+        if(s>max)
         {
-           max=sum;
+            max=s;
         }
-        }
+        
     }
     printf("%d",max);
-    return 0;
+    
 }
