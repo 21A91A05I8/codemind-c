@@ -1,27 +1,26 @@
 #include<stdio.h>
 int main()
 {
-    int n,i=0,j,s[100],c=0,dc=0,d;
+    int n,s[100],k=0,c=0,j,i,d;
     scanf("%d",&n);
     while(n)
     {
         d=n%10;
-        c++;
-        s[i]=d;
+        s[k]=d;
+        k++;
         n=n/10;
-        i++;
     }
-    for(i=0;i<c;i++)
+    for(i=0;i<k;i++)
     {
-        for(j=0;j<c;j++)
+        for(j=0;j<k;j++)
         {
-            if(s[i]==s[j]&& i!=j)
+            if(s[i]==s[j] && i!=j)
             {
-                dc++;
+                c++;
             }
         }
     }
-    if(dc==0)
+    if(c==0)
     {
         printf("Unique Number");
     }
